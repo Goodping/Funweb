@@ -17,7 +17,6 @@
 	{
 		pageNum = Integer.parseInt(request.getParameter("page"));
 	}
-	
 
 	int listCount = boardDAO.searchGetListCount(search);
 	int listLimit = 10;
@@ -33,8 +32,6 @@
 	{
 		endPage = maxPage;
 	}
-	
-	
 	
 	ArrayList<BoardDTO> boardList = boardDAO.searchBoardList(pageNum, listLimit, search);
 	
